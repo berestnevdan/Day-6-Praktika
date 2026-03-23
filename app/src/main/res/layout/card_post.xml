@@ -29,26 +29,26 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/published"
         app:layout_constraintStart_toEndOf="@id/avatar"
-        app:layout_constraintTop_toTopOf="@id/avatar"
-        tools:text="Нетология. Университет интернет-профессий" />
+        app:layout_constraintTop_toTopOf="@id/avatar" />
 
     <TextView
         android:id="@+id/published"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:maxLines="1"
         android:text="21 мая в 18:36"
         android:textColor="@android:color/darker_gray"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@id/avatar"
-        app:layout_constraintEnd_toEndOf="@id/author"
         app:layout_constraintStart_toStartOf="@id/author"
         app:layout_constraintTop_toBottomOf="@id/author"
+
         tools:text="21 мая в 18:36" />
 
     <ImageButton
         android:id="@+id/menu"
-        android:layout_width="47dp"
-        android:layout_height="37dp"
+        android:layout_width="63dp"
+        android:layout_height="47dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/menu_description"
         android:src="@drawable/ic_menu"

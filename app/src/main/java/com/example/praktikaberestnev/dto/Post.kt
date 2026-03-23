@@ -4,6 +4,7 @@ package com.example.praktikaberestnev.dto
     data class Post(
         val id: Long,
         val author: String,
+        val authorId: Long = 0,
         val content: String,
         val published: String,
         val likedByMe: Boolean = false,
